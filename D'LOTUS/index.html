@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>D'LOTUS</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+  <header>
+    <nav>
+      <h1>D'LOTUS</h1>
+      <ul>
+        <li><a href="Productos.html">Productos</a></li>
+        <li><a href="Contacto.html">Contacto</a></li>
+        <li><a href="#" id="ver-carrito">🛒 <span id="cantidad-carrito">0</span></a></li>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+        <h2>Bienvenido a Tu Tienda Favorita</h2>
+        <p>Encuentra los mejores productos al mejor precio</p>
+        <a href="Productos.html" class="btn" >Ver productos</a>
+       
+    </div>
+</section>
+
+<main class="container">
+    <h2>Productos Destacados</h2>
+    <section class="productos-grid" id="lista-productos">
+        <!-- Producto 1 -->
+        <div class="producto" data-id="1" data-nombre="Polimero" data-precio="37.500">
+          <img src="polimero.jpeg" alt="Polimero" />
+          <h3>Polímero</h3>
+          <p class="precio">$37.500</p>
+          <button class="agregar-carrito">Agregar al carrito</button>
+        </div>
+        <!-- Producto 2 -->
+        <div class="producto" data-id="2" data-nombre="Exfoliante capilar" data-precio="48.000">
+            <img src="exfoliantecapilar.jpeg" alt="Exfoliante capilar">
+            <h3>Exfoliante capilar</h3>
+            <p class="precio">$48.000</p>
+            <button class="agregar-carrito">Agregar al carrito</button>
+        </div>
+        <!-- Producto 3 -->
+        <div class="producto" data-id="3" data-nombre="bioelixir" data-precio="37.400">
+            <img src="bioelixir.jpeg" alt="Bioelixir">
+            <h3>Bioelixir</h3>
+            <p class="precio">$37.400</p>
+            <button class="agregar-carrito">Agregar al carrito</button>
+        </div>
+        <!-- Producto 4 -->
+        <div class="producto" data-id="4" data-nombre="Fast Blower" data-precio="39.900">
+            <img src="fastblower.jpg" alt="Fast Blower">
+            <h3>Producto 4</h3>
+            <p class="precio">39.900</p>
+            <button class="agregar-carrito">Agregar al carrito</button>
+        </div>
+    </section>
+</main>
+
+<div id="carrito-modal" class="oculto">
+  <div class="carrito-contenido" id="modal-content">
+    <h2>Tu Carrito</h2>
+    <ul id="lista-carrito"></ul>
+    <p id="total-carrito">Total: $0.00</p>
+    <button id="cerrar-carrito">Cerrar</button>
+  </div>
+</div>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2025 D'LOTUS. Tu tienda online de confianza.</p>
+    </div>
+</footer>
+
+</html>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login y Register - MagtimusPro</title>
+    <link rel="stylesheet" href="login_diseño.css">
+</head>
+<body>
+
+     <main>
+       
+       <div class="contenedor__todo">
+        <div class="caja__trasera">
+            <div class="caja__trasera-login">
+                <center><h3>¿Ya tienes cuenta?</h3></center>
+                <center><p>Inicia sesion para entrar a la biblioteca</p></center>
+                <center><button id="btn__iniciar-sesion">Iniciar Sesion</button></center>
+            </div>
+            <div class="caja__trasera-register">
+                <center><h3>¿Aun no tienes una cuenta?</h3></center>
+                <center><p>Registrate para entrar a la biblioteca</p></center>
+                <center><button id="btn__registrarse">Registrarse</button></center>
+            </div>
+        </div>
+        <div class="contenedor__login-register">
+            <form action="" class="formulario__login">
+                <h2>Iniciar Sesion</h2>
+                <input type="text" placeholder="Correo Electronico">
+                <input type="password" placeholder="Contraseña">
+                <center><button><a href="index.html">entrar</a></button></center>
+                <style>
+                    a {
+                        padding: 10px 40px;
+                        margin-top: 40px;
+                        border: none;
+                        font-size: 14px;
+                        background: #91498d;
+                        font-weight: 600;
+                        cursor: pointer;
+                        color: white;
+                        outline: none;
+                    }
+                    a:hover {
+                        background-color: transparent;
+                        color: #F2F2F2;
+                    }
+                    
+                </style>
+                
+            </form>
+            <form action="" class="formulario__register">
+                <h2>Registrarse</h2>
+                <input type="text" placeholder="Nombre Completo">
+                <input type="text" placeholder="Correo Electronico">
+                <input type="text" placeholder="Usuario">
+                <input type="password" placeholder="Contraseña">
+                <center><button>Registrarse</button></center>
+            </form>
+        </div>
+       </div> 
+     </main>
+     <script src="login.js"></script>
+</body>
+
+</html>
